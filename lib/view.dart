@@ -13,6 +13,7 @@ class _FlutterGridViewState extends State<FlutterGridView> {
   Widget build(BuildContext context) {
     return GridView.builder(
       itemCount: 25,
+      physics: const BouncingScrollPhysics(),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 5,
         mainAxisSpacing: 20,
@@ -20,6 +21,7 @@ class _FlutterGridViewState extends State<FlutterGridView> {
       ),
       itemBuilder: (e, index) {
         return InkWell(
+          focusColor: Colors.orange,
           onTap: () {
             Navigator.push(
               context,
@@ -29,8 +31,8 @@ class _FlutterGridViewState extends State<FlutterGridView> {
             );
           },
           child: Card(
-            child: Image.network(
-              "https://images.unsplash.com/photo-1485893226355-9a1c32a0c81e",
+            child: Image.asset(
+              "assets/images/ganpati.png",
               fit: BoxFit.cover,
             ),
           ),
