@@ -21,7 +21,7 @@ class _FlutterGridViewState extends State<FlutterGridView> {
       ),
       itemBuilder: (e, index) {
         return InkWell(
-          focusColor: Colors.orange,
+          focusColor: Colors.redAccent[100],
           onTap: () {
             Navigator.push(
               context,

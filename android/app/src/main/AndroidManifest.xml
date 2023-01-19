@@ -8,7 +8,7 @@
    <application
         android:label="ott_tv"
         android:name="${applicationName}"
-        android:banner="@drawable/banner"
+        android:banner="@drawable/launch_background"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

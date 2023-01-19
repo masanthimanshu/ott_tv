@@ -19,16 +19,10 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          scaffoldBackgroundColor: Colors.black,
+          brightness: Brightness.dark,
           textTheme: GoogleFonts.montserratTextTheme(),
           appBarTheme: const AppBarTheme(
-            foregroundColor: Colors.white,
-            backgroundColor: Colors.black,
             centerTitle: true,
-            titleTextStyle: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-            ),
           ),
         ),
         home: const HomePage(),

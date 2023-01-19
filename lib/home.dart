@@ -13,55 +13,20 @@ class HomePage extends StatelessWidget {
         body: Column(
           children: const [
             TabBar(
+              isScrollable: true,
+              indicatorColor: Colors.red,
+              labelPadding: EdgeInsets.symmetric(
+                horizontal: 50,
+              ),
               tabs: [
-                Tab(
-                  child: Text(
-                    "Home",
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-                Tab(
-                  child: Text(
-                    "Movies",
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-                Tab(
-                  child: Text(
-                    "Web Series",
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-                Tab(
-                  child: Text(
-                    "TV Shows",
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-                Tab(
-                  child: Text(
-                    "News",
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
+                Tab(child: Text("Home")),
+                Tab(child: Text("Movies")),
+                Tab(child: Text("Web Series")),
+                Tab(child: Text("TV Shows")),
+                Tab(child: Text("News")),
               ],
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 25),
             Expanded(
               child: TabBarView(
                 children: [
