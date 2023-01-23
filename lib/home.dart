@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
                 Tab(child: Text("News")),
               ],
             ),
-            SizedBox(height: 25),
+            SizedBox(height: 10),
             Expanded(
               child: TabBarView(
                 children: [
