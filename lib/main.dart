@@ -22,9 +22,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           brightness: Brightness.dark,
           textTheme: GoogleFonts.montserratTextTheme(),
-          appBarTheme: const AppBarTheme(
-            centerTitle: true,
-          ),
         ),
         home: const HomePage(),
       ),
