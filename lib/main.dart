@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
       },
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
+        title: "OTT TV App",
         theme: ThemeData(
           brightness: Brightness.dark,
           textTheme: GoogleFonts.montserratTextTheme(),
